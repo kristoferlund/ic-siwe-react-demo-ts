@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "backend": {
+      "type": "custom",
+      "main": "packages/backend/src/index.ts",
+      "candid": "packages/backend/backend.did",
+      "build": "npx azle backend",
+      "wasm": ".azle/backend/backend.wasm",
+      "gzip": true
+    },
+    "ic_siwe_provider": {
+      "type": "custom",
+      "candid": "https://github.com/kristoferlund/ic-siwe/releases/download/v0.0.4/ic_siwe_provider.did",
+      "wasm": "https://github.com/kristoferlund/ic-siwe/releases/download/v0.0.4/ic_siwe_provider.wasm.gz"
+    },
+    "frontend": {
+      "dependencies": ["backend", "ic_siwe_provider"],
+      "source": ["dist"],
+      "type": "assets",
+      "build": ["npm --prefix packages/frontend run build"]
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

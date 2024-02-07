@@ -1,0 +1,5 @@
+service: (principal) -> {
+    get_my_profile: () -> (variant {Ok:record {avatar_url:text; name:text; address:text}; Err:text}) query;
+    list_profiles: () -> (variant {Ok:vec record {text; record {avatar_url:text; name:text; address:text}}; Err:text}) query;
+    save_my_profile: (text, text) -> (variant {Ok:record {avatar_url:text; name:text; address:text}; Err:text});
+}
