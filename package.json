@@ -1,6 +1,6 @@
 {
   "name": "ic-siwe-react-demo-ts",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "workspaces": [
     "packages/backend",
     "packages/frontend"

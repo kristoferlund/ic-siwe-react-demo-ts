@@ -6,7 +6,7 @@ deploy-provider:
 	    record { \
 	        domain = \"127.0.0.1\"; \
 	        uri = \"http://127.0.0.1:5173\"; \
-	        salt = \"salt\"; \
+	        salt = \"somerandomsalt\"; \
 	        chain_id = opt 1; \
 	        scheme = opt \"http\"; \
 	        statement = opt \"Login to the SIWE/IC demo app\"; \
