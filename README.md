@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repository is no longer maintained. See [ic-siwe](https://github.com/kristoferlund/ic-siwe) for an updated list of ic-siwe demo apps.
+
 ![](media/header.png)
 
 > [!NOTE]  
